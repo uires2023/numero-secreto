@@ -51,3 +51,53 @@ numero-secreto/
 ├── index.html      # estrutura principal da página
 ├── style.css       # estilos visuais
 └── app.js          # lógica do jogo
+
+## 💡 Trecho principal do jogo
+
+const numeroSecreto = Math.floor(Math.random() * 10) + 1;
+let tentativa;
+
+while (tentativa !== numeroSecreto) {
+  tentativa = Number(prompt("Adivinhe o número secreto (de 1 a 10):"));
+  
+  if (tentativa === numeroSecreto) {
+    alert("🎉 Parabéns! Você acertou!");
+  } else if (tentativa > numeroSecreto) {
+    alert("📉 Tente um número menor!");
+  } else {
+    alert("📈 Tente um número maior!");
+  }
+}
+## 🧠 Tecnologias utilizadas
+
+| Tecnologia          | Descrição                      |
+| ------------------- | ------------------------------ |
+| 🧩 **HTML5**        | Estrutura da interface do jogo |
+| 🎨 **CSS3**         | Estilos e layout visual        |
+| ⚡ **JavaScript**    | Lógica e interatividade        |
+| 🧭 **Git / GitHub** | Versionamento e hospedagem     |
+
+
+## 🌐 Publicação no GitHub Pages
+
+Vá em Settings → Pages
+
+Selecione a branch main e a pasta / (root)
+
+Clique em Save
+
+Seu jogo ficará disponível em:
+🔗 https://uires2023.github.io/numero-secreto/
+
+👨‍💻 Autor
+
+<img src="https://avatars.githubusercontent.com/u/155882833?v=4" width=120><br><sub>Uires Carlos de Oliveira</sub>
+🎓 Estudante de Engenharia de Software — UnB
+🎷 Músico e entusiasta em tecnologia
+📧 Contato: uires.urs@gmail.com
+
+🪪 Licença
+
+Este projeto está sob a licença MIT.
+Sinta-se livre para estudar, modificar e compartilhar! 💚
+
