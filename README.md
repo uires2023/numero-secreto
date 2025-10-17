@@ -1,15 +1,13 @@
 <h1 align="center">🎯 Número Secreto</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://raw.githubusercontent.com/uires2023/numero-secreto/main/img/preview.png" width="600px" alt="Tela do jogo Número Secreto">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-concluído-brightgreen?style=flat-square" alt="Status">
-  <img src="https://img.shields.io/github/license/uires2023/numero-secreto?style=flat-square" alt="Licença">
+  <a href="https://uires2023.github.io/numero-secreto/">
+    <img src="https://img.shields.io/badge/▶️%20Jogar%20Agora-008000?style=for-the-badge&logo=githubpages&logoColor=white" alt="Jogar Agora">
+  </a>
 </p>
 
 ---
@@ -18,28 +16,31 @@
 
 O **Número Secreto** é um jogo interativo de adivinhação feito com **HTML**, **CSS** e **JavaScript**.  
 O jogador deve descobrir qual é o número secreto gerado aleatoriamente pelo sistema.  
-A cada tentativa, o jogo indica se o número informado é **maior** ou **menor** que o número correto.
+A cada tentativa, o jogo indica se o número informado é **maior ou menor** que o número correto.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/uires2023/numero-secreto/main/img/preview.png" alt="Imagem do jogo" width="600px">
+  <img src="https://raw.githubusercontent.com/uires2023/numero-secreto/main/img/game-example.png" width="500px" alt="Exemplo de jogo">
 </p>
 
 ---
 
-## 💡 Demonstração
+## 🚀 Como executar localmente
 
-Se quiser jogar online, acesse o link do GitHub Pages:
+### 1️⃣ Clone o repositório
+```bash
+git clone git@github.com:uires2023/numero-secreto.git
+```
 
-🔗 **https://uires2023.github.io/numero-secreto/**
+### 2️⃣ Acesse a pasta do projeto
+```bash
+cd numero-secreto
+```
 
----
-
-## 🧠 Tecnologias utilizadas
-
-- HTML5  
-- CSS3  
-- JavaScript (ES6+)  
-- Git e GitHub  
+### 3️⃣ Execute o jogo
+Clique duas vezes em **index.html** ou rode:
+```bash
+start index.html
+```
 
 ---
 
@@ -47,13 +48,17 @@ Se quiser jogar online, acesse o link do GitHub Pages:
 
 ```bash
 numero-secreto/
-├── img/            # imagens e ícones usados no jogo
-├── index.html      # estrutura principal da página
+├── img/            # imagens e ícones do jogo
+├── index.html      # estrutura principal
 ├── style.css       # estilos visuais
-└── app.js          # lógica do jogo
+└── app.js          # lógica e regras do jogo
+```
 
-## 💡 Trecho principal do jogo
+---
 
+## ✨ Lógica principal do jogo
+
+```js
 const numeroSecreto = Math.floor(Math.random() * 10) + 1;
 let tentativa;
 
@@ -68,36 +73,56 @@ while (tentativa !== numeroSecreto) {
     alert("📈 Tente um número maior!");
   }
 }
+```
+
+---
+
 ## 🧠 Tecnologias utilizadas
 
-| Tecnologia          | Descrição                      |
-| ------------------- | ------------------------------ |
-| 🧩 **HTML5**        | Estrutura da interface do jogo |
-| 🎨 **CSS3**         | Estilos e layout visual        |
-| ⚡ **JavaScript**    | Lógica e interatividade        |
-| 🧭 **Git / GitHub** | Versionamento e hospedagem     |
+| 🧩 Tecnologia | 💬 Descrição |
+|---------------|--------------|
+| 🧱 **HTML5** | Estrutura da interface |
+| 🎨 **CSS3** | Estilos e layout visual |
+| ⚡ **JavaScript (ES6+)** | Lógica e interatividade |
+| 🌐 **Git / GitHub** | Versionamento e hospedagem |
 
+---
 
-## 🌐 Publicação no GitHub Pages
+## 🌎 Publicação no GitHub Pages
 
-Vá em Settings → Pages
+1. Vá em **Settings → Pages**  
+2. Escolha a branch `main` e a pasta `/ (root)`  
+3. Clique em **Save**  
+4. Seu jogo ficará disponível em:  
+   🔗 [https://uires2023.github.io/numero-secreto/](https://uires2023.github.io/numero-secreto/)
 
-Selecione a branch main e a pasta / (root)
+---
 
-Clique em Save
+## 🔮 Melhorias futuras
 
-Seu jogo ficará disponível em:
-🔗 https://uires2023.github.io/numero-secreto/
+- ✅ Adicionar contador de tentativas  
+- ✅ Exibir histórico de palpites  
+- ✅ Melhorar design responsivo  
+- ✅ Adicionar sons e efeitos visuais  
 
-👨‍💻 Autor
+---
 
-<img src="https://avatars.githubusercontent.com/u/155882833?v=4" width=120><br><sub>Uires Carlos de Oliveira</sub>
-🎓 Estudante de Engenharia de Software — UnB
-🎷 Músico e entusiasta em tecnologia
-📧 Contato: uires.urs@gmail.com
+## 👤 Autor
 
-🪪 Licença
+| [<img src="https://avatars.githubusercontent.com/u/155882833?v=4" width=120><br><sub>**Uires Carlos de Oliveira**</sub>](https://github.com/uires2023) |
+| :---: |
+| 🎓 Estudante de Engenharia de Software (UnB) <br> 🎷 Músico e entusiasta em tecnologia |
+📧 **[uires.urs@gmail.com](mailto:uires.urs@gmail.com)**
 
-Este projeto está sob a licença MIT.
-Sinta-se livre para estudar, modificar e compartilhar! 💚
+---
+
+## 🪪 Licença
+
+Este projeto está sob a licença **MIT**.  
+Sinta-se livre para usar, estudar e compartilhar 💚  
+
+---
+
+⭐ **Se gostou, deixe uma estrela no repositório!**
+
 
